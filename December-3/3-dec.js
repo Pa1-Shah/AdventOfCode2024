@@ -1,3 +1,4 @@
+const checkForCorrectMulPart2 = require("./3-decPart2");
 function checkForCorrectMul(s) {
   const regex = /mul\((-?\d+(\.\d+)?),(-?\d+(\.\d+)?)\)/g;
   let i = 0;
@@ -21,6 +22,7 @@ function fileReadfromText() {
     }
     let fileContent = data;
     console.log(checkForCorrectMul(fileContent));
+    console.log(checkForCorrectMulPart2(fileContent));
   });
 }
 fileReadfromText();
